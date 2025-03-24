@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Dick-George, Tenn-Tom &mdash; A film by Gideon C. Kennedy &amp; Marcus Rosentrater</title>
+<style type="text/css">
+	@import "/css/style.css";
+</style>
+<script type="text/javascript" src="/js/jquery-1.2.1.pack.js"></script>
+<script type="text/javascript" src="/js/jquery.media.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){	
+		displayPNG();
+		var options = {
+			autoplay:0,
+			bgColor:'',
+			height:400,
+			width:500,
+			params:{
+				align:'middle',
+				allowscriptaccess:'sameDomain',
+				quality:'high',
+				name:'DickGeorgeFinalWeb',
+				wmode:'transparent'
+			}
+		};
+		$('.media').media(options);
+	});
+	function displayPNG(){
+		/// HACK FOR IE6
+		if($.browser.msie){
+			var version = navigator.appVersion.split(";");
+			var version = version[1].replace("MSIE ","");
+			parseFloat(version);
+			if ((version >= 5.5) && (version < 7) && (document.body.filters)){
+				$('img').each(function(){
+					if(this.src.match(/.png/)){
+						var d = new Date();
+						this.id = (this.id) ? this.id : 'fixPNG_'+d.getTime();
+						var imgID = (this.id) ? "id='" + this.id + "' " : "";
+						var imgClass = (this.className) ? "class='" + this.className + "' " : "";
+						var imgTitle = (this.title) ? "title='" + this.title  + "' " : "title='" + (this.alt ? this.alt : '') + "' ";
+						var imgStyle = "display:inline-block;" + this.style.cssText;
+						var strNewHTML = "<span " + imgID + imgClass + imgTitle
+						+ " style=\"" + "width:" + this.width 
+						+ "px; height:" + this.height 
+						+ "px;" + imgStyle + ";"
+						+ "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+						+ "(src=\'" + this.src + "\', sizingMethod='scale');\"></span>";
+						this.outerHTML = strNewHTML;
+					}
+				});
+			}
+		}
+	}
+</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="main">
+		<div id="header"><img src="/images/header.png" width="984" border="0" alt="Dick-George Tenn-Tom" /></div>
+		<div id="top">
+			<div id="stage">
+				<div id="movie">
+						<div><iframe width="500" height="396" src="https://www.youtube.com/embed/uuulL32YOAE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!-- <object width="500" height="396"><param name="movie" value="http://www.dailymotion.com/swf/iO3udiCktDEHFnaFf"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.dailymotion.com/swf/iO3udiCktDEHFnaFf" type="application/x-shockwave-flash" width="500" height="396" allowFullScreen="true" allowScriptAccess="always"></embed></object> --></div>
+					<div></div>
+				</div>
+			</div>
+			<div id="specs"><em>Dick-George, Tenn-Tom</em> - U S A, 2007, Runtime 11:27 min</div>
+			<img class="starsStripe" src="/images/starsStripe.gif" border="0" />
+			<p>In 1971, President Richard M. Nixon visited Mobile, AL for 104 minutes, during which time he shook 100 feet of hands, lost a cufflink, and shared a stage with his biggest political rival, Governor George Wallace. "Dick-George, Tenn-Tom" is a sardonic look at their rivalry, the creation of the Tennessee-Tombigbee Waterway, and the attempt on Wallace's life less than a year later.<br />
+				<br />
+				Written by <a href="mailto:&#103;&#105;d&#101;o&#110;&#064;&#099;&#108;&#105;&#109;&#101;&#110;&#111;&#108;&#101;&#046;&#099;&#111;&#109;">Gideon C. Kennedy</a><br />
+				Edited by <a href="mailto:&#109;&#097;r&#099;u&#115;&#064;&#099;&#108;&#105;&#109;&#101;&#110;&#111;&#108;&#101;&#046;&#099;&#111;&#109;">Marcus Rosentrater</a></p>
+				<br />
+				<p>"Dick-George, Tenn-Tom" is our second film together. We are currently in the middle of editing our third short, writing our fourth, and arranging for the production of our first feature.</p>
+				<br />
+			<br clear="all" />
+		</div>
+		<div id="middle">
+			<img class="starsStripe" src="/images/starsStripeFull.gif" width="909" border="0" />
+			<div class="award" id="awardIndicate">
+				<img src="/images/cufflink.png" border="0">
+				- indicates an award or special recognition
+			</div>
+			<h2>Upcoming Screenings</h2>
+			<dl class="odd">
+				<dt><a href="http://festivalleague.com/2007docufest" target="_blank">2nd annual DocuFest Atlanta</a></dt>
+				<dd><a href="http://festivalleague.com/2007docufest" target="_blank"><img src="/images/DocufestLogo.jpg" border="0" /></a>
+					Thursday, September 27th, 2007<br />
+					8:30pm @ Eyedrum<br />
+					plays before "1910: La Revolucion Espirita"
+				</dd>
+				<br clear="all" class="nobreak" />
+			</dl>
+			<dl>
+				<dt>
+					<div class="award">
+						<img src="/images/cufflink.png" border="0">
+						<strong>Alabama Citation of Excellence (ACE)</strong><br />
+						Excellence in Documentary Filmmaking
+					</div>
+					<a href="http://sidewalk.bside.com/?_view=_filmdetails&filmId=33049953" target="_blank">9th annual Sidewalk Moving Picture Festival</a>
+					<br clear="all" class="nobreak" />
+				</dt>
+				<dd><a href="http://sidewalk.bside.com/?_view=_filmdetails&filmId=33049953" target="_blank"><img src="/images/sidewalkLogo.gif" border="0" /></a>
+					Saturday, September 29th, 2007<br />
+					1:45pm @ the Alabama Power venue<br />
+					part of "Alabama Doc Block #1"
+				</dd>
+				<br clear="all" class="nobreak" />
+			</dl>
+			<dl class="odd">
+				<dt><a href="http://www.indiememphis.com/" target="_blank">10th annual Indie Memphis Soul of Southern Film Festival</a></dt>
+				<dd><a href="http://www.indiememphis.com/" target="_blank"><img src="/images/indiMemphis.jpg" border="0" /></a>
+					Wednesday, October 24th, 2007<br />
+					5:55pm @ Malco's Studio on the Square
+				</dd>
+				<br clear="all" class="nobreak" />
+			</dl>
+			<dl>
+				<dt><a href="http://www.hsdfi.org/2007Website/festival.htm" target="_blank">16th annual Hot Springs Documentary Film Festival</a></dt>
+				<dd><a href="http://www.hsdfi.org/2007Website/festival.htm" target="_blank"><img src="/images/hotSpringsPoster.jpg" border="0" /></a>
+					Wednesday, October 24th, 2007<br />
+					1:05pm @ Theater 1 of the Malco Theatre<br />
+					<br />
+					Saturday, October 27th, 2007<br />
+					4:05pm @ Theater 1 of the Malco Theatre<br />
+				</dd>
+				<br clear="all" class="nobreak" />
+			</dl>
+			<dl class="odd">
+				<dt><a href="http://www.southarts.org/site/c.guIYLaMRJxE/b.2845403/k.C261/JanuaryFebruary_2008__Paul_Festa.htm" target="_blank">32nd annual Southern Circuit Tour of Independent Filmmakers</a></dt>
+				<dd><a href="http://www.southarts.org/site/c.guIYLaMRJxE/b.2845403/k.C261/JanuaryFebruary_2008__Paul_Festa.htm" target="_blank"><img src="/images/southernCircuitLogo.jpg" border="0" /></a>
+					plays before Paul Festa's feature "Apparition of the Eternal Church"<br />
+					<br />
+					January 30th, 2008<br />
+					7pm @ Georgia Museum of Art (Athens, GA)<br />
+					<br />
+					January 31st, 2008<br />
+					7pm @ Nickelodeon Theatre (Columbia, SC)<br />
+					<br />
+					February 1st, 2008<br />
+					7pm @ Arts Council of Beaufort County (Beaufort, SC)<br />
+					<br />
+					February 3rd, 2008<br />
+					5pm @ I.P. Stanback Museum and Planetarium (Orangeburg, SC)<br />
+					<br />
+					February 4th, 2008<br />
+					7:30pm @ Capri Theatre (Montgomery, AL)<br />
+					<br />
+					February 6th, 2008<br />
+					7:30pm @ Manship Theatre (Baton Rouge, LA)<br />
+					<br />
+					February 7th, 2008<br />
+					7pm @ Duncan Theatre @ PBCC (Lake Worth, FL)<br />
+					<br />
+					February 8th, 2008<br />
+					7pm @ Bernheim Hall in Ben May Library (Mobile, AL)
+				</dd>
+				<br clear="all" class="nobreak" />
+			</dl>
+			<dl>
+				<dt><a href="http://www.southarts.org/site/c.guIYLaMRJxE/b.2952313/k.CF62/Schedule.htm#festival" target="_blank">1st annual Short Circuit Traveling Film Festival</a></dt>
+				<dd><a href="http://www.southarts.org/site/c.guIYLaMRJxE/b.2952313/k.CF62/Schedule.htm#festival" target="_blank"><img src="/images/ShortCircuitLogoBW_web.jpg" border="0" /></a>
+					Saturday, October 13th, 2007<br />
+					12:45pm @ DoubleTree Hotel Atlanta - Dogwood Room (Atlanta, GA)<br />
+					part of the Urban Mediamakers Film Festival <br />
+					<a href="http://umff.bside.com/?_view=_filmdetails&filmId=36601076" target="_blank">link</a><br />
+					<br />
+					Sunday, October 14th, 2007<br />
+					4pm @ MSU Riley Center Studio Theatre (Meridian, MS)<br />
+					<a href="http://www.msurileycenter.com/theatre/festivals_films.cfm" target="_blank">link</a><br />
+					<br />
+					Monday, October 29th, 2007<br />
+					7:30pm @ The Bama Theatre (Tuscaloosa, AL)<br />
+					<a href="http://www.tuscarts.org/shortcircuit.html" target="_blank">link</a><br />
+					<br />
+					Tuesday, November 13th, 2007<br />
+					time TBA @ University of West Florida - Commons Auditorium (Pensacola, FL)<br />
+					<br />
+					Sunday, December 2nd, 2007<br />
+					Ashé Cultural Arts Center (New Orleans, LA)<br />
+					<a href="http://www.ashecac.org/" target="_blank">link</a><br />
+					<br />
+					Wednesday, December 5th, 2007<br />
+					time TBA @ UNC-Chapel Hill Murphey Hall, Rm 116 (Chapel Hill, NC)<br />
+					<br />
+					Friday, January 4th, 2008<br />
+					time TBA @ Averitt Center for the Arts (Statesboro, GA)<br />
+					<a href="http://www.averittcenterforthearts.org/" target="_blank">link</a><br />
+					<br />
+					Wednesday, January 30th, 2008<br />
+					time TBA @ Sunrise Theatre for the Performing Arts (Fort Pierce, FL)<br />
+					<a href="http://www.sunrisetheatre.com/index.html" target="_blank">link</a><br />
+					<br />
+					Thursday, February 7th, 2008<br />
+					time TBA @ Wilson Center for the Arts on FCCJ South Campus & Kent Campus Auditorium on FCCJ Kent Campus (Jacksonville, FL)<br />
+					<br />
+					Thursday, February 7th, 2008<br />
+					time TBA @ The Clayton Center (Clayton, NC)<br />
+					<a href="http://www.theclaytoncenter.com/index.html" target="_blank">link</a><br />
+					<br />
+					Sunday, February 10th, 2008<br />
+					time TBA @ The Elon School (Elon, NC)<br />
+					<a href="http://www.theelonschool.org/" target="_blank">link</a><br />
+					<br />
+					Sunday, February 17th, 2008<br />
+					2pm @ Tampa Bay Performing Arts Center - Ferguson Hall (Tampa, FL)<br />
+					<a href="http://www.tbpac.com/shows/show.cfm?recordID=2050" target="_blank">link</a><br />
+					<br />
+					Thursday, February 21st, 2008<br />
+					time TBA @ Duke Power Theatre at Spirit Square (Charlotte, NC)<br />
+					<br />
+					Saturday, February 23rd, 2008<br />
+					time TBA @ Business Conference Center at McNeese State University (Lake Charles, LA)<br />
+					<br />
+					Friday, March 21st, 2008<br />
+					7:30pm @ Florida Institute of Technology - Olin Engineering Complex - Lynn Edward Weaver Auditorium - rm 118 (Melbourne, FL)<br />
+					<a href="http://events.fit.edu/" target="_blank">link</a><br />
+					<br />
+					Saturday, March 22, 2008<br />
+					time TBA @ Saenger Theater (Hattiesburg, MS)<br />
+					<a href="http://www.hattiesburgsaenger.com/index.html" target="_blank">link</a><br />
+					<br />
+					Sunday, April 6th, 2008<br />
+					time TBA @ Le Bijou Theater at Nicholls State University (Thibodaux, LA)<br />
+					<a href="http://www.nicholls.edu/union/facilities2.htm" target="_blank">link</a><br />
+					<br />
+					Saturday, May 17th, 2008<br />
+					time TBA @ Paramount Arts Center (Ashland, KY)<br />
+					<a href="http://www.paramountartscenter.com/" target="_blank">link</a><br />
+				</dd>
+				<br clear="all" class="nobreak" />
+			</dl>
+			<dl class="odd">
+				<dt>
+					<div class="award" style="width:165px">
+						<img src="/images/cufflink.png" border="0">
+						<strong>Short Grit Award</strong><br />
+						1st place in the shorts category
+					</div>
+					<a href="http://www.indiegrits.com/" target="_blank">Indie Grits Film Fest</a>
+					<br clear="all" class="nobreak" />
+				</dt>
+				<dd><a href="http://www.indiegrits.com/" target="_blank"><img src="/images/indiegritslogo.gif" border="0" /></a>
+					April 9-13, 2008<br />
+					Specific dates and times TBA @ at the Nickelodeon Theatre<br />
+					<br />
+				</dd>
+				<br clear="all" class="nobreak" />
+			</dl>
+			<dl>
+				<dt><a href="http://www.md-filmfest.com/" target="_blank">10th annual Maryland Film Festival 365</a></dt>
+				<dd><a href="http://www.md-filmfest.com/" target="_blank"><img src="/images/maryland_logo.gif" border="0" /></a>
+					May 1-4, 2008<br />
+					Specific dates and times TBA<br />
+					<br />
+				</dd>
+				<br clear="all" class="nobreak" />
+			</dl>
+			<dl>
+				<dt><a href="http://www.echoparkfilmcenter.org/" target="_blank">Southern Exposure</a></dt>
+				<dd><a href="http://www.echoparkfilmcenter.org/" target="_blank"><img height="75" width="100" title="The Echo Park Film Center" alt="A photo on Flickr" src="http://farm1.static.flickr.com/37/98037315_677e3dcf28_t.jpg"/></a>
+					May 14, 2009<br />
+					8pm @ the <a href="http://www.echoparkfilmcenter.org/" target="_blank">Echo Park Film Center</a><br />
+					Curated by Will O'Loughlen<br />
+					<br />
+				</dd>
+				<br clear="all" class="nobreak" />
+			</dl>
+		</div>
+		<div id="bottom">
+			<ul>
+				<li><a href="http://blog.dickgeorgetenntom.com/" target="_blank">Movie Blog</a></li>
+				<li><a href="http://www.climenole.com/" target="_blank">Who is Climenole?</a></li>
+				<li><a href="http://www.clandestine-movie.com/" target="_blank">Clandestine</a></li>
+			</ul>
+			<p>&copy; 2019 Climenole, L.L.C.</p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5997702-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</html>
